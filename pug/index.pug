@@ -1,0 +1,525 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title ShoeX
+    link(rel='stylesheet', href='../css/bootstrap.min.css')
+    link(rel='stylesheet', href='../css/mdb.min.css')
+    link(rel='stylesheet', href='../css/owl.carousel.min.css')
+    link(rel='stylesheet', href='../css/owl.theme.default.min.css')
+    link(rel='stylesheet', href='../css/materialdesignicons.min.css')
+    link(rel="stylesheet", href='../css/jquery.fancybox.min.css')
+    link(rel='stylesheet', href='../css/xzoom.css')
+    link(rel='stylesheet', href='../css/magnific-popup.css')
+    link(rel='stylesheet', href='../css/layout.css')
+    link(rel='shortcut icon', href='../img/favicon.png')
+  body
+    .go-top(title='Xem sản phẩm')
+      i.mdi.mdi-shoe-formal
+
+    .modal.quickview.fade.product-modal-1.show(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle')
+      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h5#exampleModalCenterTitle.modal-title Chi tiết sản phẩm
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+          .modal-body
+            .row
+              .col-lg-6
+                .modal-img
+                  img.main-image.xzoom(src='../img/product-1.png', xoriginal='../img/product-1.png')
+                  .xzoom-thumbs
+                    .owl-carousel.xzoom-carousel.owl-theme
+                      .item
+                        a(href='../img/product-1.png')
+                          img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                      .item
+                        a(href='../img/product-2.png')
+                          img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+                      .item
+                        a(href='../img/product-3.png')
+                          img.xzoom-gallery(src='../img/product-3.png', xpreview='../img/product-3.png')
+                      .item
+                        a(href='../img/product-4.png')
+                          img.xzoom-gallery(src='../img/product-4.png', xpreview='../img/product-4.png')
+                      .item
+                        a(href='../img/product-1.png')
+                          img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                      .item
+                        a(href='../img/product-2.png')
+                          img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+              .col-lg-6
+                .quickview-detail
+                  h3 walnut
+                  h4.price-product
+                    | 1.543.000 đ
+                    span 1.929.000 đ 
+                  h5
+                    | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                  .quickview-detail-1
+                    .quantity
+                      span Số lượng: 
+                      input(type='number', value='1', min='1')
+                    .size
+                      span Size:
+                      select
+                        
+                  .quickview-detail-2
+                    span Chọn màu:
+                    .color(style="background: red")
+                    .color(style="background: purple")
+                    .color(style="background: yellow")
+                    .color(style="background: green")
+                    .color(style="background: blue")
+                    .color(style="background: orange")
+                    .color(style="background: brown")
+                  
+                  .quickview-detail-3
+                    span Thông tin đặt hàng:
+                    input(type="text" placeholder="Họ tên")
+                    input(type="text" placeholder="Email")
+                    input(type="text" placeholder="Số điện thoại")
+                    input(type="text" placeholder="Địa chỉ nhận hàng")
+                  
+                  button Đặt hàng ngay
+                  
+          .modal-footer
+            button.btn.btn-light(type='button', data-dismiss='modal') Đóng
+
+
+
+    article
+      section.slider
+        .owl-carousel.slider-carousel.owl-theme
+          .item
+            img(src='./../img/slider-1.png')
+          .item
+            img(src='./../img/slider-2.png')
+          
+        .slider-text.wow.fadeIn(data-wow-delay=".5s")
+          h1(style="font-weight: 300") This is
+          img(src='../img/logo.png')
+          h1(style="font-weight: 500") Cloud 9 All day
+          h4(style="font-weight: 500") Comfortable   |   Fashionable   |   Adaptable
+          h4(style="font-weight: 300") Thoải Mái  |  Thời Thượng  |  Thích Nghi
+
+      section.article-top
+        .left.wow.fadeIn
+          img(src='../img/image-1.png')
+        .right
+          .right-zone
+            h3.wow.fadeIn(data-wow-delay=".15s") Đón đầu phong cách
+            h5.wow.fadeIn(data-wow-delay=".3s") Trở thành một trong những người đầu tiên sở hữu shoex cloud9
+            .box-right
+              h3.wow.fadeIn(data-wow-delay=".45s") 
+                span GIẢM NGAY 20% 
+                | + Tặng combo shoe cream và dây giày
+              h3.wow.fadeIn(data-wow-delay=".45s") Miễn phí đổi trả trong vòng 30 ngày
+              h4.wow.fadeIn(data-wow-delay=".6s") 
+                span 1.929.000 đ
+                | Chỉ còn 1.543.000 đ
+              
+            h2.wow.fadeIn(data-wow-delay=".8s") 
+              a Mua ngay
+
+      section.product
+        .container
+          .title-page.wow.fadeIn
+            h1 WINGTIP OXFORD
+          
+          .owl-carousel.product-carousel.owl-theme.wow.fadeIn(data-wow-delay=".3s")
+            .item
+              .box-product
+                .box-product-img
+                  img.show(src='../img/product-1.png')
+                  img.hidden(src='../img/product-2.png')
+                .box-product-detail
+                  h3 walnut
+                  h4
+                    span 1.929.000 đ
+                    | 1.543.000 đ
+                .box-product-order
+                  a(data-toggle="modal" data-target=".product-modal-1")
+                    | Mua ngay
+                    i.mdi.mdi-shopping
+            
+            .item
+              .box-product
+                .box-product-img
+                  img.show(src='../img/product-2.png')
+                  img.hidden(src='../img/product-4.png')
+                .box-product-detail
+                  h3 Burgundy
+                  h4
+                    span 1.929.000 đ
+                    | 1.543.000 đ
+                .box-product-order
+                  a(data-toggle="modal" data-target=".product-modal-1")
+                    | Mua ngay
+                    i.mdi.mdi-shopping
+            
+            .item
+              .box-product
+                .box-product-img
+                  img.show(src='../img/product-3.png')
+                  img.hidden(src='../img/product-1.png')
+                .box-product-detail
+                  h3 Dark brown
+                  h4
+                    span 1.929.000 đ
+                    | 1.543.000 đ
+                .box-product-order
+                  a(data-toggle="modal" data-target=".product-modal-1")
+                    | Mua ngay
+                    i.mdi.mdi-shopping
+            
+            .item
+              .box-product
+                .box-product-img
+                  img.show(src='../img/product-4.png')
+                  img.hidden(src='../img/product-1.png')
+                .box-product-detail
+                  h3 classic black
+                  h4
+                    span 1.929.000 đ
+                    | 1.543.000 đ
+                .box-product-order
+                  a(data-toggle="modal" data-target=".product-modal-1")
+                    | Mua ngay
+                    i.mdi.mdi-shopping
+
+      section.innovation
+        .left
+          .left-child
+            h1.wow.fadeIn INNOVATION FOR a GENTLEMEN on THE go
+            h2.wow.fadeIn(data-wow-delay=".2s") CẢI TIẾN VƯỢT TRỘI,
+            h2.wow.fadeIn(data-wow-delay=".2s") BẮT KỊP PHONG CÁCH THÀNH CÔNG
+            h4.wow.fadeIn(data-wow-delay=".5s") Cảm nhận sự thoải mái nhờ công nghệ đột phá, giữ vững tinh thần trang trọng qua từng đường nét thủ công, hoàn thiện vẻ ngoài đa phong cách.
+
+        .right
+          img.wow.fadeIn(data-wow-delay="1s", src='../img/image-2.png')
+
+      section.our-product
+        .container
+          .title-page.wow.fadeIn
+            h2  
+              | our
+              span comunity
+
+          .owl-carousel.our-product-carousel.owl-theme
+            .item
+              .box-our-product
+                .box-our-product-img.wow.fadeIn(data-wow-delay=".2s")
+                  img(src='../img/our-product-1.png')
+                .box-our-product-detail
+                  img.wow.fadeIn(data-wow-delay=".4s", src='../img/our-product-icon-1.png')
+                  .box-our-product-title
+                    h1.wow.fadeIn(data-wow-delay=".5s") insole
+                    h4.wow.fadeIn(data-wow-delay=".6s") ÊM ÁI, THÔNG thoáng
+                  .box-our-product-detail-desc.wow.fadeIn(data-wow-delay=".8s")
+                    p Thiết kế hình học thông minh ôm dáng chân tạo cảm giác thoải mái, vững chãi trong quá trình di chuyển.
+                    p Kết hợp hai loại chất liệu vụn gỗ cùng EVA giúp tăng cường khả năng thấm hút, tạo sự khô thoáng cho giày. Bề mặt insole được phủ bằng vải với hệ thống lưới cùng độ ma sát vừa phải giúp tạo độ bám cho bàn chân.
+
+            .item
+              .box-our-product
+                .box-our-product-img.wow.fadeIn(data-wow-delay=".2s")
+                  img(src='../img/our-product-1.png')
+                .box-our-product-detail
+                  img.wow.fadeIn(data-wow-delay=".4s", src='../img/our-product-icon-1.png')
+                  .box-our-product-title
+                    h1.wow.fadeIn(data-wow-delay=".5s") insole
+                    h4.wow.fadeIn(data-wow-delay=".6s") ÊM ÁI, THÔNG thoáng
+                  .box-our-product-detail-desc.wow.fadeIn(data-wow-delay=".8s")
+                    p Thiết kế hình học thông minh ôm dáng chân tạo cảm giác thoải mái, vững chãi trong quá trình di chuyển.
+                    p Kết hợp hai loại chất liệu vụn gỗ cùng EVA giúp tăng cường khả năng thấm hút, tạo sự khô thoáng cho giày. Bề mặt insole được phủ bằng vải với hệ thống lưới cùng độ ma sát vừa phải giúp tạo độ bám cho bàn chân.
+            
+            .item
+              .box-our-product
+                .box-our-product-img.wow.fadeIn(data-wow-delay=".2s")
+                  img(src='../img/our-product-1.png')
+                .box-our-product-detail
+                  img.wow.fadeIn(data-wow-delay=".4s", src='../img/our-product-icon-1.png')
+                  .box-our-product-title
+                    h1.wow.fadeIn(data-wow-delay=".5s") insole
+                    h4.wow.fadeIn(data-wow-delay=".6s") ÊM ÁI, THÔNG thoáng
+                  .box-our-product-detail-desc.wow.fadeIn(data-wow-delay=".8s")
+                    p Thiết kế hình học thông minh ôm dáng chân tạo cảm giác thoải mái, vững chãi trong quá trình di chuyển.
+                    p Kết hợp hai loại chất liệu vụn gỗ cùng EVA giúp tăng cường khả năng thấm hút, tạo sự khô thoáng cho giày. Bề mặt insole được phủ bằng vải với hệ thống lưới cùng độ ma sát vừa phải giúp tạo độ bám cho bàn chân.
+            
+            .item
+              .box-our-product
+                .box-our-product-img.wow.fadeIn(data-wow-delay=".2s")
+                  img(src='../img/our-product-1.png')
+                .box-our-product-detail
+                  img.wow.fadeIn(data-wow-delay=".4s", src='../img/our-product-icon-1.png')
+                  .box-our-product-title
+                    h1.wow.fadeIn(data-wow-delay=".5s") insole
+                    h4.wow.fadeIn(data-wow-delay=".6s") ÊM ÁI, THÔNG thoáng
+                  .box-our-product-detail-desc.wow.fadeIn(data-wow-delay=".8s")
+                    p Thiết kế hình học thông minh ôm dáng chân tạo cảm giác thoải mái, vững chãi trong quá trình di chuyển.
+                    p Kết hợp hai loại chất liệu vụn gỗ cùng EVA giúp tăng cường khả năng thấm hút, tạo sự khô thoáng cho giày. Bề mặt insole được phủ bằng vải với hệ thống lưới cùng độ ma sát vừa phải giúp tạo độ bám cho bàn chân.
+            
+            .item
+              .box-our-product
+                .box-our-product-img.wow.fadeIn(data-wow-delay=".2s")
+                  img(src='../img/our-product-1.png')
+                .box-our-product-detail
+                  img.wow.fadeIn(data-wow-delay=".4s", src='../img/our-product-icon-1.png')
+                  .box-our-product-title
+                    h1.wow.fadeIn(data-wow-delay=".5s") insole
+                    h4.wow.fadeIn(data-wow-delay=".6s") ÊM ÁI, THÔNG thoáng
+                  .box-our-product-detail-desc.wow.fadeIn(data-wow-delay=".8s")
+                    p Thiết kế hình học thông minh ôm dáng chân tạo cảm giác thoải mái, vững chãi trong quá trình di chuyển.
+                    p Kết hợp hai loại chất liệu vụn gỗ cùng EVA giúp tăng cường khả năng thấm hút, tạo sự khô thoáng cho giày. Bề mặt insole được phủ bằng vải với hệ thống lưới cùng độ ma sát vừa phải giúp tạo độ bám cho bàn chân.
+            
+      section.fashionable
+        .container
+          .left
+            img.wow.fadeIn(src='../img/fashionable.png')
+          .right
+            .title-fashionable
+              h1.wow.fadeIn(data-wow-delay=".2s") fashionable
+              h2.wow.fadeIn(data-wow-delay=".3s") BIỂU TƯỢNG THANH lịch
+              h4.wow.fadeIn(data-wow-delay=".4s") Vẻ thanh lịch ngời lên từ đường nét thủ công tinh xảo, chất liệu thượng hạng cùng phom dáng chuẩn mực.
+
+            .box-fashionable.wow.fadeIn(data-wow-delay=".6s")
+              img(src='../img/fashionable-icon-1.png')
+              h5 UPPER DA BÊ MỸ cao cấp
+              i Chất liệu da bê Mỹ cùng phương thức thuộc da đặc biệt giúp hạn chế vết nhăn khi vận động.
+            
+            .box-fashionable.wow.fadeIn(data-wow-delay=".8s")
+              img(src='../img/fashionable-icon-2.png')
+              h5 PHOM DÁNG CHUẨN MỰC
+              i Phom giày cải tiến, tinh chỉnh phù hợp với sinh trắc học bàn chân người Việt,thuận tiện di chuyễn, thoải mái cả ngày
+            
+            .box-fashionable.wow.fadeIn(data-wow-delay="1s")
+              img(src='../img/fashionable-icon-3.png')
+              h5 WELT DA CAO CẤP
+              i Với chất liệu da cao cấp, welt (nhiễu) là điểm nhấn hoàn thiện vẻ ngoài đẳng cấp, sang trọng.
+            
+      section.adaptable
+        .adaptable-title.wow.slideInLeft(data-wow-delay=".5s")
+          .adaptable-title-child
+            h1 adaptable
+            h2 THÁCH THỨC MỌI PHONG cách
+            
+        .owl-carousel.adaptable-carousel.owl-theme.wow.slideInRight(data-wow-delay=".5s")
+          .item
+            img(src='../img/adaptable-1.png')
+          .item
+            img(src='../img/img-1.png')
+          .item
+            img(src='../img/img-2.png')
+          .item
+            img(src='../img/img-3.png')
+            
+      section.adaptable-2
+        .left
+          img.wow.slideInLeft(src='../img/adaptable-icon-1.png')
+        .center.wow.fadeIn(data-wow-delay=".5s")
+          .center-child
+            p Một đôi giày có thể đồng hành với phái mạnh từ môi trường công sở, những buổi họp, gặp gỡ đối tác cho đến các buổi hẹn hò, hay xuống phố cùng bạn bè.
+            p Sự lựa chọn thuận tiện, đa năng, có thể theo chân bạn trong cả những chuyến công tác hay kì nghỉ dài.
+        .right
+          img.wow.slideInRight(src='../img/adaptable-icon-2.png')
+        
+      section.promotion
+        .promotion-img
+          img.wow.fadeIn(src='../img/promotion.png')
+        .promotion-line
+          img.wow.zoomInUp(data-wow-delay=".6s", src='../img/promotion-line.png')
+        .container
+          .box-promotion.wow.zoomInDown(data-wow-delay=".3s")
+            h4 Trở thành một trong những người đầu tiên sở hữu shoex cloud9
+            .box-promotion-child
+              h3 
+                span GIẢM NGAY 20% 
+                | + Tặng combo shoe cream và dây giày
+              h3 Miễn phí đổi trả trong vòng 30 ngày
+              h4 
+                span 1.929.000 đ
+                | Chỉ còn 1.543.000 đ
+            .box-promotion-img
+              img(src='../img/promotion-1.png')
+              img(src='../img/promotion-2.png')
+              img(src='../img/promotion-3.png')
+              img(src='../img/promotion-4.png')
+                 
+      section.product
+        .container
+          .title-page.wow.fadeIn
+            h1 WINGTIP OXFORD
+          
+          .owl-carousel.product-carousel.owl-theme.wow.fadeIn(data-wow-delay=".3s")
+            .item
+              .box-product
+                .box-product-img
+                  img.show(src='../img/product-1.png')
+                  img.hidden(src='../img/product-2.png')
+                .box-product-detail
+                  h3 walnut
+                  h4
+                    span 1.929.000 đ
+                    | 1.543.000 đ
+                .box-product-order
+                  a(data-toggle="modal" data-target=".product-modal-1")
+                    | Mua ngay
+                    i.mdi.mdi-shopping
+            
+            .item
+              .box-product
+                .box-product-img
+                  img.show(src='../img/product-2.png')
+                  img.hidden(src='../img/product-4.png')
+                .box-product-detail
+                  h3 Burgundy
+                  h4
+                    span 1.929.000 đ
+                    | 1.543.000 đ
+                .box-product-order
+                  a(data-toggle="modal" data-target=".product-modal-1")
+                    | Mua ngay
+                    i.mdi.mdi-shopping
+            
+            .item
+              .box-product
+                .box-product-img
+                  img.show(src='../img/product-3.png')
+                  img.hidden(src='../img/product-1.png')
+                .box-product-detail
+                  h3 Dark brown
+                  h4
+                    span 1.929.000 đ
+                    | 1.543.000 đ
+                .box-product-order
+                  a(data-toggle="modal" data-target=".product-modal-1")
+                    | Mua ngay
+                    i.mdi.mdi-shopping
+            
+            .item
+              .box-product
+                .box-product-img
+                  img.show(src='../img/product-4.png')
+                  img.hidden(src='../img/product-1.png')
+                .box-product-detail
+                  h3 classic black
+                  h4
+                    span 1.929.000 đ
+                    | 1.543.000 đ
+                .box-product-order
+                  a(data-toggle="modal" data-target=".product-modal-1")
+                    | Mua ngay
+                    i.mdi.mdi-shopping
+
+      section.comunity
+        .container
+          .title-page.wow.fadeIn
+            img(src='../img/title-icon.png')
+            h2  
+              span our
+              | comunity
+
+          .owl-carousel.comunity-carousel.owl-theme.wow.fadeIn(data-wow-delay=".5s") 
+            .item
+              .box-comunity
+                i.mdi.mdi-image-search-outline(title="Nhấn để phóng to ảnh" data-caption="Mô tả hoặc tên của ảnh" data-fancybox="gallery" href="../img/comunity-1.png")
+                img(src='../img/comunity-1.png')
+
+            .item
+              .box-comunity
+                i.mdi.mdi-image-search-outline(title="Nhấn để phóng to ảnh" data-caption="Mô tả hoặc tên của ảnh" data-fancybox="gallery" href="../img/img-4.png")
+                img(src='../img/img-4.png')
+
+            .item
+              .box-comunity
+                i.mdi.mdi-image-search-outline(title="Nhấn để phóng to ảnh" data-caption="Mô tả hoặc tên của ảnh" data-fancybox="gallery" href="../img/img-3.png")
+                img(src='../img/img-3.png')
+
+            .item
+              .box-comunity
+                i.mdi.mdi-image-search-outline(title="Nhấn để phóng to ảnh" data-caption="Mô tả hoặc tên của ảnh" data-fancybox="gallery" href="../img/img-2.png")
+                img(src='../img/img-2.png')
+
+            .item
+              .box-comunity
+                i.mdi.mdi-image-search-outline(title="Nhấn để phóng to ảnh" data-caption="Mô tả hoặc tên của ảnh" data-fancybox="gallery" href="../img/img-1.png")
+                img(src='../img/img-1.png')
+
+            .item
+              .box-comunity
+                i.mdi.mdi-image-search-outline(title="Nhấn để phóng to ảnh" data-caption="Mô tả hoặc tên của ảnh" data-fancybox="gallery" href="../img/img-4.png")
+                img(src='../img/img-4.png')
+
+      section.feedback.our-product
+        .container
+          .title-page.wow.fadeIn
+            h2  
+              span our
+              | feedback
+
+          .owl-carousel.our-product-carousel.owl-theme.wow.fadeIn(data-wow-delay=".5s") 
+            .item
+              .box-feedback
+                .box-feedback-img
+                  img(src='../img/feedback-1.png')
+                .box-feedback-detail
+                  h1 Shark Hưng
+                  h4 Lorem ipsum
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id porta nibh venenatis cras sed felis eget velit aliquet. Mollis nunc sed id semper. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Quis varius quam quisque id diam vel. 
+            
+            .item
+              .box-feedback
+                .box-feedback-img
+                  img(src='../img/feedback-1.png')
+                .box-feedback-detail
+                  h1 Shark Hưng
+                  h4 Lorem ipsum
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id porta nibh venenatis cras sed felis eget velit aliquet. Mollis nunc sed id semper. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Quis varius quam quisque id diam vel. 
+            
+            .item
+              .box-feedback
+                .box-feedback-img
+                  img(src='../img/feedback-1.png')
+                .box-feedback-detail
+                  h1 Shark Hưng
+                  h4 Lorem ipsum
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id porta nibh venenatis cras sed felis eget velit aliquet. Mollis nunc sed id semper. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Quis varius quam quisque id diam vel. 
+            
+      section.footer
+        .footer-line.wow.fadeIn(data-wow-delay="1.5s") 
+          img(src='../img/footer-img.png')
+        .container.wow.fadeIn
+          .logo
+            img.wow.fadeIn(data-wow-delay=".2s", src='../img/logo.png')
+          .row
+            .col-lg-4.col-sm-6.wow.fadeInLeftBig(data-wow-delay=".3s") 
+              .store
+                h4 Hệ thống cửa hàng ShoeX
+                p Store 1:
+                h5 56 Lê Thánh Tôn, Quận 1, TP.HCM
+                p Store 2:
+                h5 119 Lê Văn Sỹ, Quận Phú Nhuận, TP.HCM
+            .col-lg-4.col-sm-6.wow.fadeInLeftBig(data-wow-delay=".5s") 
+              .hotline
+                p hotline
+                h5 +84 90 39 48 984 
+                h5 (DM/WhatsApp/Viber/Zalo)
+                h2 shoex.net
+            .col-lg-4.col-sm-12.wow.fadeInLeftBig(data-wow-delay=".7s") 
+              .hotline
+                p hotline
+                h5 +84 90 39 48 984 
+                h5 (DM/WhatsApp/Viber/Zalo)
+                h2 shoex.net
+            
+
+    script(src='../js/jquery-3.3.1.min.js')
+    script(src='../js/mdb.min.js')
+    script(src='../js/bootstrap.min.js')
+    script(src='../js/owl.carousel.min.js')
+    script(src='../js/jquery.fancybox.min.js')
+    script(src='../js/xzoom.min.js')
+    script(src='../js/magnific-popup.js')
+    script(src='../js/layout.js')
