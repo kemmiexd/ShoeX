@@ -29,27 +29,27 @@ html(lang="en")
             .row
               .col-lg-6
                 .modal-img
-                  img.main-image.xzoom(src='../img/product-1.png', xoriginal='../img/product-1.png')
+                  img.main-image.xzoom(src='../img/p-6.jpg', xoriginal='../img/p-6.jpg')
                   .xzoom-thumbs
                     .owl-carousel.xzoom-carousel.owl-theme
                       .item
-                        a(href='../img/product-1.png')
-                          img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                        a(href='../img/p-6.jpg')
+                          img.xzoom-gallery(src='../img/p-6.jpg', xpreview='../img/p-6.jpg')
                       .item
-                        a(href='../img/product-2.png')
-                          img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+                        a(href='../img/p-1.jpg')
+                          img.xzoom-gallery(src='../img/p-1.jpg', xpreview='../img/p-1.jpg')
                       .item
-                        a(href='../img/product-3.png')
-                          img.xzoom-gallery(src='../img/product-3.png', xpreview='../img/product-3.png')
+                        a(href='../img/p-2.jpg')
+                          img.xzoom-gallery(src='../img/p-2.jpg', xpreview='../img/p-2.jpg')
                       .item
-                        a(href='../img/product-4.png')
-                          img.xzoom-gallery(src='../img/product-4.png', xpreview='../img/product-4.png')
+                        a(href='../img/p-3.jpg')
+                          img.xzoom-gallery(src='../img/p-3.jpg', xpreview='../img/p-3.jpg')
                       .item
-                        a(href='../img/product-1.png')
-                          img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                        a(href='../img/p-4.jpg')
+                          img.xzoom-gallery(src='../img/p-4.jpg', xpreview='../img/p-4.jpg')
                       .item
-                        a(href='../img/product-2.png')
-                          img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+                        a(href='../img/p-5.jpg')
+                          img.xzoom-gallery(src='../img/p-5.jpg', xpreview='../img/p-5.jpg')
               .col-lg-6
                 .quickview-detail
                   h3 walnut
@@ -64,17 +64,15 @@ html(lang="en")
                       input(type='number', value='1', min='1')
                     .size
                       span Size:
-                      select
-                        
+                      select    
+                        option(value="") US 6.5 | EUR 39
+                        option(value="")  US 6.5 | 39
+                        option(value="")  US 6.5 | 39
+                        option(value="")  US 6.5 | 39
+                        option(value="")  US 6.5 | 39
+
                   .quickview-detail-2
-                    span Chọn màu:
-                    .color(style="background: red")
-                    .color(style="background: purple")
-                    .color(style="background: yellow")
-                    .color(style="background: green")
-                    .color(style="background: blue")
-                    .color(style="background: orange")
-                    .color(style="background: brown")
+                    i Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, amet.
                   
                   .quickview-detail-3
                     span Thông tin đặt hàng:
@@ -93,10 +91,12 @@ html(lang="en")
     article
       section.slider
         .owl-carousel.slider-carousel.owl-theme
+          //- .item
+          //-   img(src='./../img/slider-1.png')
           .item
-            img(src='./../img/slider-1.png')
+            img(src='./../img/bg.jpg')
           .item
-            img(src='./../img/slider-2.png')
+            img(src='./../img/bg-2.jpg')
           
         .slider-text.wow.fadeIn(data-wow-delay=".5s")
           h1(style="font-weight: 300") This is
@@ -115,7 +115,7 @@ html(lang="en")
             .box-right
               h3.wow.fadeIn(data-wow-delay=".45s") 
                 span GIẢM NGAY 20% 
-                | + Tặng combo shoe cream và dây giày
+              h3 Tặng combo shoe cream và dây giày
               h3.wow.fadeIn(data-wow-delay=".45s") Miễn phí đổi trả trong vòng 30 ngày
               h4.wow.fadeIn(data-wow-delay=".6s") 
                 span 1.929.000 đ
@@ -133,8 +133,8 @@ html(lang="en")
             .item
               .box-product
                 .box-product-img
-                  img.show(src='../img/product-1.png')
-                  img.hidden(src='../img/product-2.png')
+                  img.show(src='../img/p-6.jpg')
+                  img.hidden(src='../img/p-1.jpg')
                 .box-product-detail
                   h3 walnut
                   h4
@@ -199,14 +199,14 @@ html(lang="en")
             h4.wow.fadeIn(data-wow-delay=".5s") Cảm nhận sự thoải mái nhờ công nghệ đột phá, giữ vững tinh thần trang trọng qua từng đường nét thủ công, hoàn thiện vẻ ngoài đa phong cách.
 
         .right
-          img.wow.fadeIn(data-wow-delay="1s", src='../img/image-2.png')
+          img(src='../img/image-2.png')
 
       section.our-product
         .container
           .title-page.wow.fadeIn
             h2  
               | our
-              span comunity
+              span product
 
           .owl-carousel.our-product-carousel.owl-theme
             .item
@@ -331,12 +331,12 @@ html(lang="en")
         .promotion-line
           img.wow.zoomInUp(data-wow-delay=".6s", src='../img/promotion-line.png')
         .container
-          .box-promotion.wow.zoomInDown(data-wow-delay=".3s")
+          .box-promotion.wow.fadeIn(data-wow-delay=".3s")
             h4 Trở thành một trong những người đầu tiên sở hữu shoex cloud9
             .box-promotion-child
               h3 
                 span GIẢM NGAY 20% 
-                | + Tặng combo shoe cream và dây giày
+              h3 Tặng combo shoe cream và dây giày
               h3 Miễn phí đổi trả trong vòng 30 ngày
               h4 
                 span 1.929.000 đ
@@ -508,11 +508,8 @@ html(lang="en")
                 h5 (DM/WhatsApp/Viber/Zalo)
                 h2 shoex.net
             .col-lg-4.col-sm-12.wow.fadeInLeftBig(data-wow-delay=".7s") 
-              .hotline
-                p hotline
-                h5 +84 90 39 48 984 
-                h5 (DM/WhatsApp/Viber/Zalo)
-                h2 shoex.net
+              .right
+                img(src='../img/footer-right.png')
             
 
     script(src='../js/jquery-3.3.1.min.js')

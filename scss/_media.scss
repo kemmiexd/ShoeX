@@ -50,7 +50,16 @@ $main_color: #17305f;
 
   .product .box-product-order {
     opacity: 1;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+
+  .our-product .owl-theme .owl-nav button.owl-next {
+    right: 0;
+  }
+
+  .our-product .owl-theme .owl-nav button.owl-prev {
+    left: 0;
   }
 }
 
@@ -117,7 +126,8 @@ $main_color: #17305f;
         position: absolute;
         width: 100%;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
       }
     }
 
@@ -151,7 +161,8 @@ $main_color: #17305f;
         position: relative;
         top: initial;
         left: initial;
-        transform: none;
+        -webkit-transform: none;
+                transform: none;
         margin-bottom: 15px;
       }
     }
@@ -214,7 +225,8 @@ $main_color: #17305f;
         position: relative;
         top: initial;
         left: initial;
-        transform: none;
+        -webkit-transform: none;
+                transform: none;
       }
     }
   }
@@ -239,7 +251,8 @@ $main_color: #17305f;
       img {
         position: relative;
         top: initial;
-        transform: none;
+        -webkit-transform: none;
+                transform: none;
       }
     }
 
@@ -262,8 +275,11 @@ $main_color: #17305f;
       width: 100%;
       margin-left: 0;
       margin-top: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 
       img {
         margin-right: 15px;
@@ -319,6 +335,10 @@ $main_color: #17305f;
 
     .left {
       width: 100%;
+      
+      img {
+        margin-left: -50px;
+      }
     }
 
     .right {
@@ -327,7 +347,8 @@ $main_color: #17305f;
       &-zone {
         position: relative;
         top: initial;
-        transform: none;
+        -webkit-transform: none;
+                transform: none;
         width: 100%;
 
         h3 {
@@ -448,8 +469,22 @@ $main_color: #17305f;
   .our-product {
     margin-bottom: 15px;
   }
+
+  .slider .owl-theme .owl-nav.disabled+.owl-dots {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
- 
+  .quickview .modal-content .quickview-detail-1 {
+
+    .color, .quantity {
+      width: 100%;
+    }
+  }
+
+  .promotion .box-promotion-child h3 span {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
 }
