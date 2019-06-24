@@ -143,9 +143,6 @@ $('.adaptable-carousel').owlCarousel({
 
 
 $(document).ready(() => {
-  wow = new WOW({ mobile: false, })
-  wow.init();
-
   // GO TOP
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
@@ -159,20 +156,27 @@ $(document).ready(() => {
     $('html, body').animate({
       scrollTop: $($('.product')).offset().top + 1
     }, 300, 'linear');
-  })
-
-  // loop for size product
-  const sizeProduct = (start, end) => {
-    for(let size = start; size <= end; size++) {
-      $('.quickview-detail .size select')
-        .append(`<option value="${size}">${size}</option>`)
-    }
-  };
-  sizeProduct(39, 44); // call func
-
-  // active color quick view
-  $('.quickview-detail .color').click(function() {
-    $('.quickview-detail .color').removeClass('active');
-    $(this).addClass('active');
   });
+
+  $('.order-submit').click(() => {
+    Swal({
+      title: 'Đặt hàng thành công',
+      type: 'success',
+      html: 'Quý khách vui lòng kiểm tra hòm thư có chứa thông tin đơn hàng. Xin cám ơn !',
+      showCloseButton: true,
+      showCancelButton: false,
+      focusConfirm: false,
+      confirmButtonText:
+        'Tiếp tục mua sắm',
+      cancelButtonText:
+        'Tiếp tục mua sắm',
+    })
+  });
+
+  $('.order-submit').on('click', function() {
+    $('.quickview, .modal-backdrop').removeClass('show')
+    $('.quickview').css('display', 'none');
+    $('.modal-backdrop').remove();
+    $('body').removeClass('modal-open')
+  })
 });

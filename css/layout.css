@@ -170,12 +170,6 @@ body .mfp-bg {
 body .mfp-wrap {
   z-index: 1053;
 }
-body .swal2-popup .swal2-styled.swal2-confirm {
-  background: #17305f;
-}
-body .swal2-popup .swal2-styled.swal2-confirm a {
-  font-weight: 500;
-}
 body .ui-widget.ui-widget-content {
   z-index: 1050;
 }
