@@ -381,6 +381,13 @@ body .ui-widget.ui-widget-content {
 .slider .slider-text h4 {
   font-size: 18px;
 }
+.slider .owl-carousel .owl-stage-outer {
+  max-height: 100vh;
+}
+.slider .owl-carousel .owl-stage-outer img {
+  object-fit: cover;
+  height: 100vh;
+}
 .slider .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: -10px;
 }
@@ -393,8 +400,8 @@ body .ui-widget.ui-widget-content {
   transition: 0.2s;
 }
 .slider .owl-theme .owl-nav.disabled + .owl-dots button.active span, .slider .owl-theme .owl-nav.disabled + .owl-dots button:hover span {
-  background: wh;
-  border-color: wh;
+  background: #17305f;
+  border-color: #17305f;
 }
 
 .article-top {
@@ -677,78 +684,8 @@ body .ui-widget.ui-widget-content {
   right: 0;
   top: -10%;
   height: 120%;
-  -webkit-animation: innovation 5s linear infinite;
-  animation: innovation 5s linear infinite;
 }
 
-@-webkit-keyframes innovation {
-  0% {
-    -webkit-transform: none;
-    transform: none;
-  }
-  15% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-  30% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-  45% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-  60% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  75% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  90% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes innovation {
-  0% {
-    -webkit-transform: none;
-    transform: none;
-  }
-  15% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-  30% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-  45% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-  60% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  75% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  90% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
 .our-product {
   margin-bottom: 50px;
 }
@@ -1010,62 +947,6 @@ body .ui-widget.ui-widget-content {
   transform: translateY(-50%);
 }
 
-@-webkit-keyframes adaptableLeft {
-  0% {
-    -webkit-transform: none;
-    transform: none;
-  }
-  33% {
-    -webkit-transform: translate(10px, 10px);
-    transform: translate(10px, 10px);
-  }
-  66% {
-    -webkit-transform: translate(-10px, -10px);
-    transform: translate(-10px, -10px);
-  }
-}
-@keyframes adaptableLeft {
-  0% {
-    -webkit-transform: none;
-    transform: none;
-  }
-  33% {
-    -webkit-transform: translate(10px, 10px);
-    transform: translate(10px, 10px);
-  }
-  66% {
-    -webkit-transform: translate(-10px, -10px);
-    transform: translate(-10px, -10px);
-  }
-}
-@-webkit-keyframes adaptableRight {
-  0% {
-    -webkit-transform: none;
-    transform: none;
-  }
-  33% {
-    -webkit-transform: translate(-10px, 10px);
-    transform: translate(-10px, 10px);
-  }
-  66% {
-    -webkit-transform: translate(10px, -10px);
-    transform: translate(10px, -10px);
-  }
-}
-@keyframes adaptableRight {
-  0% {
-    -webkit-transform: none;
-    transform: none;
-  }
-  33% {
-    -webkit-transform: translate(-10px, 10px);
-    transform: translate(-10px, 10px);
-  }
-  66% {
-    -webkit-transform: translate(10px, -10px);
-    transform: translate(10px, -10px);
-  }
-}
 .promotion {
   position: relative;
   margin-top: 100px;
@@ -1095,6 +976,7 @@ body .ui-widget.ui-widget-content {
   overflow: hidden;
   z-index: 3;
   position: relative;
+  padding-bottom: 120px;
 }
 .promotion .box-promotion h4 {
   text-align: center;
@@ -1141,7 +1023,8 @@ body .ui-widget.ui-widget-content {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: -150px;
+  position: absolute;
+  bottom: -50%;
 }
 .promotion .box-promotion-img img {
   width: calc(100% / 4 - 30px);
@@ -1666,6 +1549,11 @@ body .ui-widget.ui-widget-content {
 
   .slider .owl-theme .owl-nav.disabled + .owl-dots {
     display: none;
+  }
+
+  .slider .owl-carousel .owl-item img {
+    height: 50vh;
+    object-fit: cover;
   }
 }
 @media (max-width: 450px) {

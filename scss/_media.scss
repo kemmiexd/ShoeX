@@ -473,6 +473,11 @@ $main_color: #17305f;
   .slider .owl-theme .owl-nav.disabled+.owl-dots {
     display: none;
   }
+
+  .slider .owl-carousel .owl-item img {
+    height: 50vh;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 450px) {

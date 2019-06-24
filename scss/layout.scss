@@ -67,7 +67,6 @@ $main_color: #17305f;
     z-index: 2;
     color: white;
 
-
     h1 {
       font-size: 50px;
     }
@@ -85,6 +84,15 @@ $main_color: #17305f;
     }
   }
 
+  .owl-carousel .owl-stage-outer {
+    max-height: 100vh;
+
+    img {
+      object-fit: cover;
+      height: 100vh;
+    }
+  }
+
   .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: -10px;
 
@@ -99,8 +107,8 @@ $main_color: #17305f;
       }
 
       &.active span, &:hover span {
-        background: wh;
-        border-color: wh;
+        background: $main_color;
+        border-color: $main_color;
       }
     }
   }
@@ -436,64 +444,6 @@ $main_color: #17305f;
     right: 0;
     top: -10%;
     height: 120%;
-    -webkit-animation: innovation 5s linear infinite;
-            animation: innovation 5s linear infinite;
-  }
-}
-
-@-webkit-keyframes innovation {
-  0% {
-    -webkit-transform: none;
-            transform: none;
-  } 15% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  } 30% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  } 45% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  } 60% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  } 75% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  } 90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }  100% {
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@keyframes innovation {
-  0% {
-    -webkit-transform: none;
-            transform: none;
-  } 15% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  } 30% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  } 45% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  } 60% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  } 75% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  } 90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }  100% {
-    -webkit-transform: none;
-            transform: none;
   }
 }
 
@@ -802,58 +752,6 @@ $main_color: #17305f;
   }
 }
 
-@-webkit-keyframes adaptableLeft {
-  0% {
-    -webkit-transform: none;
-            transform: none;
-  } 33% {
-    -webkit-transform: translate(10px, 10px);
-            transform: translate(10px, 10px);
-  } 66% {
-    -webkit-transform: translate(-10px, -10px);
-            transform: translate(-10px, -10px);
-  }
-}
-
-@keyframes adaptableLeft {
-  0% {
-    -webkit-transform: none;
-            transform: none;
-  } 33% {
-    -webkit-transform: translate(10px, 10px);
-            transform: translate(10px, 10px);
-  } 66% {
-    -webkit-transform: translate(-10px, -10px);
-            transform: translate(-10px, -10px);
-  }
-}
-
-@-webkit-keyframes adaptableRight {
-  0% {
-    -webkit-transform: none;
-            transform: none;
-  } 33% {
-    -webkit-transform: translate(-10px, 10px);
-            transform: translate(-10px, 10px);
-  } 66% {
-    -webkit-transform: translate(10px, -10px);
-            transform: translate(10px, -10px);
-  }
-}
-
-@keyframes adaptableRight {
-  0% {
-    -webkit-transform: none;
-            transform: none;
-  } 33% {
-    -webkit-transform: translate(-10px, 10px);
-            transform: translate(-10px, 10px);
-  } 66% {
-    -webkit-transform: translate(10px, -10px);
-            transform: translate(10px, -10px);
-  }
-}
-
 .promotion {
   position: relative;
   margin-top: 100px;
@@ -887,6 +785,7 @@ $main_color: #17305f;
     overflow: hidden;
     z-index: 3;
     position: relative;
+    padding-bottom: 120px;
 
     h4 {
       text-align: center;
@@ -939,7 +838,8 @@ $main_color: #17305f;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      margin-bottom: -150px;
+        position: absolute;
+      bottom: -50%;
 
       img {
         width: calc(100% / 4 - 30px);
